@@ -1,19 +1,18 @@
-#include <QCoreApplication>
+#include <iostream>   // Librería para entrada/salida de datos
+    using namespace std;  // Para no escribir std:: antes de cout o cin
 
-int main(int argc, char *argv[])
-{
-    QCoreApplication a(argc, argv);
+int main() {          // Función principal del programa
+    int num1, num2, suma;  // Declaración de variables enteras
 
-    // Set up code that uses the Qt event loop here.
-    // Call a.quit() or a.exit() to quit the application.
-    // A not very useful example would be including
-    // #include <QTimer>
-    // near the top of the file and calling
-    // QTimer::singleShot(5000, &a, &QCoreApplication::quit);
-    // which quits the application after 5 seconds.
+    cout << "Ingresa el primer número: ";
+    cin >> num1;           // Lee el primer número desde el teclado
 
-    // If you do not need a running Qt event loop, remove the call
-    // to a.exec() or use the Non-Qt Plain C++ Application template.
+    cout << "Ingresa el segundo número: ";
+    cin >> num2;
 
-    return a.exec();
+    suma = num1 + num2;    // Suma los dos números
+
+    cout << "La suma es: " << suma << endl;  // Muestra el resultado
+
+    return 0;              // Indica que el programa terminó correctamente
 }
