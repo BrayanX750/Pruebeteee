@@ -2,17 +2,22 @@
     using namespace std;  // Para no escribir std:: antes de cout o cin
 
 int main() {          // Función principal del programa
-    int num1, num2, suma;  // Declaración de variables enteras
+    int num1,num2;
+    cout <<"Ingrese el primer numero del programa: ";
+    cin >> num1;
 
-    cout << "Ingresa el primer número: ";
-    cin >> num1;           // Lee el primer número desde el teclado
-
-    cout << "Ingresa el segundo número: ";
+    cout<<"ingrese el segundo numero del programa: ";
     cin >> num2;
 
-    suma = num1 + num2;    // Suma los dos números
+    if(num1>num2){
+        cout<<"el numero mayor es: " << num1 << std::endl;
+    }
+    else if(num2 >num1){
 
-    cout << "La suma es: " << suma << endl;  // Muestra el resultado
+        cout <<"el numero mayor es: " <<num2 << std::endl;
+    }
+    else(num1==num2);{
+            cout <<"ambos numeros son iguales";
+        }
 
-    return 0;              // Indica que el programa terminó correctamente
 }
