@@ -1,7 +1,7 @@
 #include <iostream>   // Librería para entrada/salida de datos
     using namespace std;  // Para no escribir std:: antes de cout o cin
 
-int main() {          // Función principal del programa
+int main() {          // Función del programa
     int num1,num2;
     cout <<"Ingrese el primer numero del programa: ";
     cin >> num1;
